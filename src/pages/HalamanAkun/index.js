@@ -16,11 +16,15 @@ function HalamanAkun({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
 
-<Modal  isVisible={modal}    >
-<View  style={{ backgroundColor:colors.white, paddingVertical:50, borderRadius:20,}}>
-<TouchableOpacity  style={{ left:290, bottom:40}}   onPress={() => setModal(false)}   ><Image   style={{width:15, height:15,}} source={require('../../assets/img/x.png')} /></TouchableOpacity>
-    <Image   style={{width:128, height:128, left:100}}  source={require('../../assets/img/ceklis.png')} />
-    <Text style={{color:colors.secondary, fontFamily:'Alata-Regular', fontSize:20, left:80, top:20,}} >Berhasil Disimpan</Text>
+<Modal style={{alignItems:'center'}}  isVisible={modal}    >
+<View  style={{ backgroundColor:colors.white, borderRadius:20, padding:10, width:300, height:200}}>
+<View style={{flexDirection:'row', justifyContent:'flex-end', padding:10}} >
+<TouchableOpacity  style={{}}   onPress={() => setModal(false)}   ><Image   style={{width:15, height:15,}} source={require('../../assets/img/x.png')} /></TouchableOpacity>
+</View>
+<View style={{alignItems:'center', bottom:20}}>
+    <Image   style={{width:128, height:128,}}  source={require('../../assets/img/ceklis.png')} />
+    <Text style={{color:colors.secondary, fontFamily:'Alata-Regular', fontSize:20, textAlign:'center'}} >Berhasil Disimpan</Text>
+    </View>
 </View>
 </Modal>
     
