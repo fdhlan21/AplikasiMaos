@@ -39,7 +39,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices arcu eu 
 
 <View style={{padding:10,top:5, margin:20}} >
     <TouchableOpacity onPress={()=>navigation.navigate('HalamanTaks4')} style={{padding:10, backgroundColor:colors.primary, borderRadius:10,}} >
-        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'çenter'}}>Next</Text>
+        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Next</Text>
     </TouchableOpacity>
 </View>
 

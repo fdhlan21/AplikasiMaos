@@ -13,10 +13,10 @@ function HalamanReflection({navigation}) {
     const [modal,setModal] = useState(false)
 
   return (
-    <View style={{ flex: 1, backgroundColor:colors.white, }}>
+    <View style={{ flex: 1, backgroundColor:colors.white,  }}>
 
-<Modal isVisible={modal}>
-        <View style={{ backgroundColor:colors.white,borderRadius:20, width:300, height:200, margin:30 }}>
+<Modal   style={{alignItems:'center'}} isVisible={modal}>
+        <View style={{ backgroundColor:colors.white,borderRadius:20, width:300, height:200, }}>
         
         <View style={{flexDirection:'row', justifyContent:'flex-end', padding:10}}>
         <TouchableOpacity  style={{}}   onPress={() => setModal(false)}   ><Image   style={{width:15, height:15,}} source={require('../../assets/img/x.png')} /></TouchableOpacity>

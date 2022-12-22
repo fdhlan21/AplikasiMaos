@@ -14,7 +14,7 @@ function HalamanTaks3({navigation}) {
 
 <View  style={{backgroundColor:colors.secondary, padding:10, borderBottomLeftRadius:20, borderBottomRightRadius:20, bottom:30 }}>
 <View   style={{flexDirection:'row', padding:10,top:25 }} >
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanResultTaks2')} >
+    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanResultTaks2')} style={{}} >
         <Image   style={{width:24, height:24}}  source={require('../../assets/img/back.png')} />
     </TouchableOpacity>
 </View>
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices arcu eu 
  </View>
 
 <View style={{padding:10, top:5, margin:20 }} >
-    <TouchableOpacity onPress={()=>navigation.navigate('HalamanResultTaks3')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+    <TouchableOpacity  style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}}   onPress={()=>navigation.navigate('HalamanResultTaks3')}  >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Next</Text>
     </TouchableOpacity>
 </View>
