@@ -12,34 +12,33 @@ function HalamanUnitSatu({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
 
-<View  style={{flexDirection:'row', backgroundColor:colors.secondary, padding:10,paddingVertical:10, borderBottomLeftRadius:20, borderBottomRightRadius:20, }}>
-<View   style={{flexDirection:'row', padding:10,  }} >
-    <TouchableOpacity>
+<View  style={{backgroundColor:colors.secondary,borderBottomLeftRadius:20, borderBottomRightRadius:20, padding:10, bottom:30}}>
+<View   style={{ padding:10, flexDirection:'row' ,top:25  }} >
+    <TouchableOpacity onPress={()=>navigation.navigate('HalamanHome')}>
         <Image   style={{width:24, height:24}}  source={require('../../assets/img/back.png')} />
     </TouchableOpacity>
 </View>
 
-  <View style={{flexDirection:'row', padding:10,  paddingLeft:100}}>
-  <Text style={{ fontSize:25, fontFamily:'Alata-Regular', color:colors.white}} >Unit 1</Text>
+  <View style={{padding:10, alignItems:'center', bottom:10}}>
+  <Text style={{ fontSize:25, fontFamily:'Alata-Regular', color:colors.white, textAlign:'center'}} >Unit 1</Text>
   </View>
 </View>
 <ScrollView>
- 
-<View   style={{ flexDirection:'row', padding:10,  paddingLeft:30, bottom:5}}>
+<View   style={{ padding:10,alignItems:'center'}}>
     <Image style={{width:285, height:443}}     source={require('../../assets/img/potounitsatu.png')} />
 </View>
 
-<View  style={{flexDirection:'row', padding:10, paddingLeft:130, bottom:20}} >
-    <Text  style={{fontFamily:'Alata-Regular', fontSize:30}} >Unit 1 :</Text>
+<View  style={{padding:10, bottom:20}} >
+    <Text  style={{fontFamily:'Alata-Regular', fontSize:30, textAlign:'center'}} >Unit 1 :</Text>
 </View>
 
-<View  style={{flexDirection:'row', padding:10,}} >
-    <Text  style={{fontFamily:'Alata-Regular', fontSize:25, paddingLeft:30, bottom:40}} >The Best Wealth is Heath</Text>
+<View  style={{padding:10,}} >
+    <Text  style={{fontFamily:'Alata-Regular', fontSize:25, bottom:40, textAlign:'center'}} >The Best Wealth is Heath</Text>
 </View>
 
-<View style={{flexDirection:'row', padding:10, paddingLeft:80, bottom:55}} >
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanReception')} style={{padding:10, backgroundColor:colors.primary, paddingHorizontal:80, borderRadius:10,}} >
-        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15}}>Start</Text>
+<View style={{padding:10,bottom:55,margin:20}} >
+    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanReception')} style={{padding:10, backgroundColor:colors.primary, borderRadius:10,}} >
+        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Start</Text>
     </TouchableOpacity>
 </View>
 
@@ -47,16 +46,16 @@ function HalamanUnitSatu({navigation}) {
 
 
 <View style={{padding:1, backgroundColor:colors.secondary,}}></View>
-<View style={{flexDirection:'row', padding:10,}}>
-    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanHome')}  style={{ paddingLeft:65}}  >
+<View style={{flexDirection:'row', padding:10, justifyContent:'space-around'}}>
+    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanHome')}  style={{}}  >
         <Image   style={{width:38, height:33,}} source={require('../../assets/img/home.png')} />
     </TouchableOpacity>
 
-    <TouchableOpacity onPress={()=>navigation.navigate('HalamanHistory')}  style={{ paddingLeft:55}}  >
+    <TouchableOpacity onPress={()=>navigation.navigate('HalamanHistory')}  style={{}}  >
         <Image   style={{width:28, height:33,}} source={require('../../assets/img/history.png')} />
     </TouchableOpacity>
 
-    <TouchableOpacity onPress={()=>navigation.navigate('HalamanAkun')}  style={{ paddingLeft:55}}  >
+    <TouchableOpacity onPress={()=>navigation.navigate('HalamanAkun')}  style={{}}  >
         <Image   style={{width:33, height:33,}} source={require('../../assets/img/profle.png')} />
     </TouchableOpacity>
 </View>

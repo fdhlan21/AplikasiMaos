@@ -12,34 +12,34 @@ function HalamanUnitLima({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
 
-<View  style={{flexDirection:'row', backgroundColor:colors.secondary, padding:10,paddingVertical:10, borderBottomLeftRadius:20, borderBottomRightRadius:20, }}>
-<View   style={{flexDirection:'row', padding:10,  }} >
-    <TouchableOpacity>
+<View  style={{backgroundColor:colors.secondary, padding:10,borderBottomLeftRadius:20, borderBottomRightRadius:20, bottom:30 }}>
+<View   style={{flexDirection:'row', padding:10, top:25 }} >
+    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanHome')}>
         <Image   style={{width:24, height:24}}  source={require('../../assets/img/back.png')} />
     </TouchableOpacity>
 </View>
 
-  <View style={{flexDirection:'row', padding:10,  paddingLeft:100}}>
-  <Text style={{ fontSize:25, fontFamily:'Alata-Regular', color:colors.white}} >Unit 5</Text>
+  <View style={{padding:10,}}>
+  <Text style={{ fontSize:25, fontFamily:'Alata-Regular', color:colors.white, textAlign:'center'}} >Unit 5</Text>
   </View>
 </View>
 <ScrollView>
  
-<View   style={{ flexDirection:'row', padding:10,  paddingLeft:50, bottom:5}}>
+<View   style={{padding:10,top:5,alignItems:'center'}}>
     <Image style={{width:270, height:339}}     source={require('../../assets/img/potounitlima.png')} />
 </View>
 
-<View  style={{flexDirection:'row', padding:10, paddingLeft:130, bottom:20}} >
-    <Text  style={{fontFamily:'Alata-Regular', fontSize:30}} >Unit 5 :</Text>
+<View  style={{padding:10, top:10}} >
+    <Text  style={{fontFamily:'Alata-Regular', fontSize:30, textAlign:'center'}} >Unit 5 :</Text>
 </View>
 
-<View  style={{flexDirection:'row', padding:10,}} >
-    <Text  style={{fontFamily:'Alata-Regular', fontSize:25, paddingLeft:80, bottom:40}} >Buy 1, Get 1 Free</Text>
+<View  style={{ padding:10, top:25}} >
+    <Text  style={{fontFamily:'Alata-Regular', fontSize:25, bottom:40, textAlign:'center'}} >Buy 1, Get 1 Free</Text>
 </View>
 
-<View style={{flexDirection:'row', padding:10, paddingLeft:80, top:48, paddingBottom:150 }} >
+<View style={{padding:10,  margin:20, bottom:12 }} >
     <TouchableOpacity   onPress={()=>navigation.navigate('HalamanReception')}  style={{padding:10, backgroundColor:colors.primary, paddingHorizontal:80, borderRadius:10,}} >
-        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15}}>Start</Text>
+        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Start</Text>
     </TouchableOpacity>
 </View>
 
@@ -47,16 +47,16 @@ function HalamanUnitLima({navigation}) {
 
 
 <View style={{padding:1, backgroundColor:colors.secondary,}}></View>
-<View style={{flexDirection:'row', padding:10,}}>
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanHome')}  style={{ paddingLeft:65}}  >
+<View style={{flexDirection:'row', padding:10, justifyContent:'space-around'}}>
+    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanHome')}  style={{}}  >
         <Image   style={{width:38, height:33,}} source={require('../../assets/img/home.png')} />
     </TouchableOpacity>
 
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanHistory')}  style={{ paddingLeft:55}}  >
+    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanHistory')}  style={{}}  >
         <Image   style={{width:28, height:33,}} source={require('../../assets/img/history.png')} />
     </TouchableOpacity>
 
-    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanAkun')}  style={{ paddingLeft:55}}  >
+    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanAkun')}  style={{}}  >
         <Image   style={{width:33, height:33,}} source={require('../../assets/img/profle.png')} />
     </TouchableOpacity>
 </View>
