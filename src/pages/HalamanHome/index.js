@@ -36,7 +36,7 @@ function HalamanHome({navigation}) {
 
 
 <View  style={{flexDirection:'row', padding:10, bottom:95, justifyContent:'space-around'    }} >
-<TouchableOpacity onPress={()=>navigation.navigate('HalamanUnitSatu')}  style={{padding:10, backgroundColor:colors.secondary, borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<TouchableOpacity onPress={()=>navigation.navigate('HalamanUnitSatu')}  style={{padding:10, backgroundColor:colors.secondary, borderRadius:10, width:138, height:138, alignItems:'center', borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:64, height:79, }}  source={require('../../assets/img/unitsatu.png')} />
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', textAlign:'center', fontSize:12}}>The Best Wealth</Text>
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', textAlign:'center', fontSize:12}}>is Health</Text>
@@ -44,7 +44,7 @@ function HalamanHome({navigation}) {
 
 
 
-<TouchableOpacity   onPress={()=>navigation.navigate('HalamanUnitDua')} style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<TouchableOpacity   onPress={()=>navigation.navigate('HalamanUnitDua')} style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:57, height:79,}}  source={require('../../assets/img/Unitdua.png')} />
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', top:10, textAlign:'center', fontSize:12}}>What is The Recipe?</Text>
 
@@ -61,7 +61,7 @@ function HalamanHome({navigation}) {
 
 
 <View  style={{flexDirection:'row', padding:10, bottom:95, justifyContent:'space-around'  }} >
-<TouchableOpacity   onPress={()=>navigation.navigate('HalamanUnitTiga')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<TouchableOpacity   onPress={()=>navigation.navigate('HalamanUnitTiga')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:92, height:67, }}  source={require('../../assets/img/Unittiga.png')} />
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', top:10, textAlign:'center', fontSize:12}}>Let’s Read The Story!</Text>
 
@@ -69,7 +69,7 @@ function HalamanHome({navigation}) {
 
 
 
-<TouchableOpacity  onPress={()=>navigation.navigate('HalamanUnitEmpat')}   style={{padding:10, backgroundColor:colors.secondary, borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<TouchableOpacity  onPress={()=>navigation.navigate('HalamanUnitEmpat')}   style={{padding:10, backgroundColor:colors.secondary, borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:69, height:67,}}  source={require('../../assets/img/Unitempat.png')} />
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', top:10, textAlign:'center', fontSize:12}}>The More You Read,</Text>
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', top:10, textAlign:'center', fontSize:12}}>the More You Know</Text>
@@ -86,31 +86,33 @@ function HalamanHome({navigation}) {
 
 
 
-<View  style={{flexDirection:'row', padding:10, bottom:95,  justifyContent:'space-around' }} >
-<TouchableOpacity  onPress={()=>navigation.navigate('HalamanUnitLima')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<View  style={{flexDirection:'row', padding:10, bottom:95,  justifyContent:'space-around',   }} >
+<TouchableOpacity  onPress={()=>navigation.navigate('HalamanUnitLima')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:67, height:67,}}  source={require('../../assets/img/Unitlima.png')} />
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', textAlign:'center', top:10, fontSize:12}}>Buy 1, Get 1 Free</Text>
 </TouchableOpacity>
 
 
 
-<TouchableOpacity   onPress={()=>navigation.navigate('HalamanStudent')}   style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<TouchableOpacity   onPress={()=>navigation.navigate('HalamanStudent')}   style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:59, height:66,}}  source={require('../../assets/img/studentguidens.png')} />
 
 
 </TouchableOpacity>
+
 </View>
 
-<View  style={{flexDirection:'row', justifyContent:'space-around', padding:10, bottom:100 }} >
-    <Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.secondary,}}>Unit 5</Text>
- <Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.white,}}>Unit 5</Text>
+<View  style={{flexDirection:'row', justifyContent:'space-around',bottom:95, left:20  }} >
+<Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.secondary, textAlign:'center'}}>Unit 5</Text>
+<Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.secondary, textAlign:'center'}}>Student’s Guidance</Text>
+
 </View>
 
 
 
 
-<View  style={{flexDirection:'row', padding:10, justifyContent:'space-around', bottom:110 }} >
-<TouchableOpacity    onPress={()=>navigation.navigate('HalamanTeacher')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center'}} >
+<View  style={{flexDirection:'row', padding:10, justifyContent:'space-around', bottom:95 }} >
+<TouchableOpacity    onPress={()=>navigation.navigate('HalamanTeacher')}  style={{padding:10, backgroundColor:colors.secondary,borderRadius:10, width:138, height:138, alignItems:'center',  borderWidth:2, borderColor:colors.primary}} >
 <Image  style={{width:78, height:66, left:0}}  source={require('../../assets/img/teacherguidens.png')} />
 </TouchableOpacity>
 
@@ -119,6 +121,11 @@ function HalamanHome({navigation}) {
 </View>
 
 
+
+<View  style={{flexDirection:'row', justifyContent:'space-around',bottom:95, left:7 }} >
+<Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.secondary,}}>Teacher’s Guidance</Text>
+<Text style={{ fontSize:15, fontFamily:'Alata-Regular', color:colors.white}}>Student’s Guidance</Text>
+</View>
 
 
 

@@ -23,7 +23,7 @@ function HalamanAkun({navigation}) {
 </View>
 <View style={{alignItems:'center', bottom:20}}>
     <Image   style={{width:128, height:128,}}  source={require('../../assets/img/ceklis.png')} />
-    <Text style={{color:colors.secondary, fontFamily:'Alata-Regular', fontSize:20, textAlign:'center'}} >Berhasil Disimpan</Text>
+    <Text style={{color:colors.secondary, fontFamily:'Alata-Regular', fontSize:20, textAlign:'center'}} >Saved Successfully!</Text>
     </View>
 </View>
 </Modal>
@@ -97,7 +97,7 @@ function HalamanAkun({navigation}) {
 
 
 <View style={{padding:10,top:5, margin:20}} >
-    <TouchableOpacity  onPress={() => setModal(true)}   style={{padding:10, backgroundColor:colors.primary, borderRadius:10,}} >
+    <TouchableOpacity  onPress={() => setModal(true)}   style={{padding:10, backgroundColor:colors.primary, borderRadius:10,  borderWidth:2, borderColor:colors.secondary}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Simpan</Text>
     </TouchableOpacity>
 </View>
