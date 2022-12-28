@@ -20,8 +20,8 @@ function HalamanLogin({navigation}) {
   <Image    style={{width:170, height:288, }} source={require('../../assets/img/logomaos.png')} />
 </View>
  
- <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Email' placeholderTextColor='gray'  autoCapitalize="none" onChangeText={(text) => setEmail(text)} />
- <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular' , color:colors.black}} placeholder='Password' placeholderTextColor='gray'  secureTextEntry={true}  autoCapitalize="none"  onChangeText={(text) => setPassword(text)}/>
+ <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Email' placeholderTextColor='gray'   />
+ <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular' , color:colors.black}} placeholder='Password' placeholderTextColor='gray'  secureTextEntry={true} />
     
     <View  style={{ padding:10, alignItems:'center'}} >
 <TouchableOpacity  onPress={()=>navigation.navigate('HalamanHome')}   style={{padding:10, backgroundColor:colors.secondary, borderRadius:10, paddingHorizontal:130, borderWidth:1, borderColor:colors.white}} >
