@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, Component,  } from "react";
 import { View, Text, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -10,6 +10,8 @@ import Modal from "react-native-modal";
 function HalamanRegister({navigation}) {
 
 const [modal,setModal] = useState(false)
+const [email, password, name] = useState(false)
+
 
   return (
     <View style={{ flex: 1, backgroundColor:colors.primary }}>
@@ -37,7 +39,7 @@ const [modal,setModal] = useState(false)
 </View>
 
  
- <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Name' placeholderTextColor='gray'  />
+ <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Name' placeholderTextColor='gray'   />
  <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Email' placeholderTextColor='gray'  />
  <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Password' placeholderTextColor='gray'  secureTextEntry={true} />
     

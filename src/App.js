@@ -1,6 +1,5 @@
 // In App.js in a new project
-
-import * as React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -33,13 +32,12 @@ import HalamanAkun from './pages/HalamanAkun';
 import HalamanHistory from './pages/HalamanHistory';
 
 
-
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='HalamanSplash'>
+      <Stack.Navigator initialRouteName='Login'>
         <Stack.Screen name="HalamanSplash" component={HalamanSplash} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanLogin" component={HalamanLogin} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanRegister" component={HalamanRegister} options={{headerShown:false}}  />
