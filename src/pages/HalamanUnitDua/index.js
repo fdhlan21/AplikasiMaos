@@ -38,7 +38,7 @@ function HalamanUnitDua({navigation}) {
 </View>
 
 <View style={{padding:10,bottom:60, margin:20}} >
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanReception')}  style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+    <TouchableOpacity   onPress={()=>navigation.navigate('KelompokTaksDua')}  style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Start</Text>
     </TouchableOpacity>
 </View>

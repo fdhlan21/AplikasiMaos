@@ -17,7 +17,7 @@ function HalamanLogin({navigation}) {
 <ScrollView>
 
 <View  style={{ padding:12,  marginTop:40, alignItems:'center'}} >
-  <Image    style={{width:170, height:288, }} source={require('../../assets/img/logomaos.png')} />
+  <Image    style={{width:134, height:244, }} source={require('../../assets/img/logomaos.png')} />
 </View>
  
  <TextInput  style={{margin:10, backgroundColor:colors.white, borderRadius:10, paddingLeft:10, borderWidth:1, borderColor:colors.secondary, fontFamily:'Alata-Regular', color:colors.black}} placeholder='Email' placeholderTextColor='gray'   />

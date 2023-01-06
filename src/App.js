@@ -30,6 +30,15 @@ import HalamanFinalTaks from './pages/HalamanFinalTaks';
 import HalamanReflection from './pages/HalamanReflection';
 import HalamanAkun from './pages/HalamanAkun';
 import HalamanHistory from './pages/HalamanHistory';
+import KelompokTaksSatu from './pages/Pages/UnitSatu';
+import KelompokTaksSatuDua from './pages/Pages/UnitSatuDua';
+import KelompokTaksSatuTiga from './pages/Pages/UnitSatuTiga';
+import KelompokTaksSatuEmpat from './pages/Pages/TaksSatuEmpat';
+import KelompokTaksSatuLima from './pages/Pages/UnitSatuLima';
+import KelompokTaksSatuEnam from './pages/Pages/UnitSatuEnam';
+import KelompokTaksSatuTujuh from './pages/Pages/UnitSatuTujuh';
+import KelompokTaksSatuDelapan from './pages/Pages/UnitSatuDelapan';
+import KelompokTaksDua from './pages/Pages/UnitDuaSatu';
 
 
 const Stack = createNativeStackNavigator();
@@ -37,7 +46,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator initialRouteName='KelompokTaksDua'>
         <Stack.Screen name="HalamanSplash" component={HalamanSplash} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanLogin" component={HalamanLogin} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanRegister" component={HalamanRegister} options={{headerShown:false}}  />
@@ -64,6 +73,23 @@ function App() {
         <Stack.Screen name="HalamanReflection" component={HalamanReflection} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanAkun" component={HalamanAkun} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanHistory" component={HalamanHistory} options={{headerShown:false}}  />
+        <Stack.Screen name="KelompokTaksSatu" component={KelompokTaksSatu} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuDua" component={KelompokTaksSatuDua} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuTiga" component={KelompokTaksSatuTiga} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuEmpat" component={KelompokTaksSatuEmpat} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuLima" component={KelompokTaksSatuLima} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuEnam" component={KelompokTaksSatuEnam} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuTujuh" component={KelompokTaksSatuTujuh} options={{headerShown:false}}  />
+   <Stack.Screen name="KelompokTaksSatuDelapan" component={KelompokTaksSatuDelapan} options={{headerShown:false}}  />
+        <Stack.Screen name="KelompokTaksDua" component={KelompokTaksDua} options={{headerShown:false}}  />
+
+
+
+
+
+
+
+
 
 
 
