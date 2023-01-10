@@ -21,7 +21,7 @@ function KelompokTaksSatuDelapan({navigation}) {
         <View style={{ backgroundColor:colors.white,borderRadius:20, width:300, height:200, }}>
         
         <View style={{flexDirection:'row', justifyContent:'flex-end', padding:10}}>
-        <TouchableOpacity     onPress={() => setModal(false)}    style={{}}  ><Image   style={{width:15, height:15,}} source={require('../../../assets/img/x.png')} /></TouchableOpacity>
+        <TouchableOpacity    onPress={()=>navigation.navigate('HalamanUnitSatu')}   style={{}}  ><Image   style={{width:15, height:15,}} source={require('../../../assets/img/x.png')} /></TouchableOpacity>
         </View>
         <View style={{padding:10 ,bottom:20, justifyContent:'center', alignItems:'center'}}>
         <Image  style={{width:128, height:128, }} source={require('../../../assets/img/ceklis.png')} />

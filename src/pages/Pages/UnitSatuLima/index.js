@@ -123,7 +123,7 @@ Do not take if you have severe kidney disease.</Text>
 
 
 <View style={{padding:10, margin:20, bottom:250 }} >
-    <TouchableOpacity  onPress={()=>navigation.navigate('KelompokTaksSatuLima')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+    <TouchableOpacity  onPress={()=>navigation.navigate('KelompokTaksSatuEnam')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Result</Text>
     </TouchableOpacity>
 </View>

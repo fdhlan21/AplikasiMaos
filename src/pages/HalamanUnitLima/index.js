@@ -38,7 +38,7 @@ function HalamanUnitLima({navigation}) {
 </View>
 
 <View style={{padding:10,  margin:20, bottom:12 }} >
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanReception')}  style={{padding:10, backgroundColor:colors.primary, paddingHorizontal:80, borderRadius:10,}} >
+    <TouchableOpacity   onPress={()=>navigation.navigate('KelompokTaksLimaSatu')}  style={{padding:10, backgroundColor:colors.primary, paddingHorizontal:80, borderRadius:10,}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Start</Text>
     </TouchableOpacity>
 </View>

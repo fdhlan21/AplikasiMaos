@@ -5,7 +5,8 @@ import { View, Text, Image, TouchableOpacity, ScrollView,   } from 'react-native
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import colors from '../../../utils/colors/colors';
-import PDFView from 'react-native-view-pdf';
+
+
 
 function KelompokTaksDua({navigation}) {
 
@@ -15,7 +16,7 @@ function KelompokTaksDua({navigation}) {
 
 <View  style={{backgroundColor:colors.secondary, padding:10,borderBottomLeftRadius:20, borderBottomRightRadius:20, bottom:30 }}>
 <View   style={{flexDirection:'row', padding:10, top:25  }} >
-    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanUnitDua')} >
+    <TouchableOpacity  onPress={()=>navigation.navigate('KelompokTaksDua')} >
         <Image   style={{width:24, height:24}}  source={require('../../../assets/img/back.png')} />
     </TouchableOpacity>
 </View>
@@ -24,15 +25,29 @@ function KelompokTaksDua({navigation}) {
   <Text style={{ fontSize:25, fontFamily:'Alata-Regular', color:colors.white, textAlign:'center'}} >A. Let’ Start</Text>
   </View>
 </View>
+
+
+
+
+
 <ScrollView>
 
-<View style={{padding:10}} > 
-
-
-
+<View style={{padding:10, alignItems:'center',}}> 
+<Image  style={{width:305, height:589,}} source={require('../../../assets/img/unitdua/unitdua(1).png')} />
 </View>
 
+
+<View style={{padding:10, margin:20,  }} >
+    <TouchableOpacity  onPress={()=>navigation.navigate('KelompokTaksDuaTiga')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+        <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Next</Text>
+    </TouchableOpacity>
+</View>
+
+
 </ScrollView>
+
+
+
 
 
 <View style={{padding:1, backgroundColor:colors.secondary,}}></View>

@@ -39,6 +39,37 @@ import KelompokTaksSatuEnam from './pages/Pages/UnitSatuEnam';
 import KelompokTaksSatuTujuh from './pages/Pages/UnitSatuTujuh';
 import KelompokTaksSatuDelapan from './pages/Pages/UnitSatuDelapan';
 import KelompokTaksDua from './pages/Pages/UnitDuaSatu';
+import KelompokTaksDuaDua from './pages/Pages/UnitDuaDua';
+import KelompokTaksDuaTiga from './pages/Pages/UnitDuaTiga';
+import KelompokTaksDuaEmpat from './pages/Pages/UnitDuaEmpat';
+import KelompokTaksDuaLima from './pages/Pages/UnitDuaLima';
+import KelompokTaksDuaEnam from './pages/Pages/UnitDuaEnam';
+import KelompokTaksDuaTujuh from './pages/Pages/UnitDuaTujuh';
+import KelompokTaksDuaDelapan from './pages/Pages/UnitDuaDelapan';
+import KelompokTaksTiga from './pages/Pages/UnitTigaSatu';
+import KelompokTaksTigaDua from './pages/Pages/UnitTigaDua';
+import KelompokTaksTigaTiga from './pages/Pages/UnitTigaTiga';
+import KelompokTaksTigaEmpat from './pages/Pages/UnitTigaEmpat';
+import KelompokTaksTigaLima from './pages/Pages/UnitTigaLima';
+import KelompokTaksTigaEnam from './pages/Pages/UnitTigaEnam';
+import KelompokTaksTigaTujuh from './pages/Pages/UnitTigaTujuh';
+import KelompokTaksTigaDelapan from './pages/Pages/UnitTigaDelapan';
+import KelompokTaksEmpatSatu from './pages/Pages/UnitEmpatSatu';
+import KelompokTaksEmpatDua from './pages/Pages/UnitEmpatDua';
+import KelompokTaksEmpatTiga from './pages/Pages/UnitEmpatTiga';
+import KelompokTaksEmpatEmpat from './pages/Pages/UnitEmpatEmpat';
+import KelompokTaksEmpatima from './pages/Pages/UnitEmpatLima';
+import KelompokTaksEmpatEnam from './pages/Pages/UnitEmpatEnam';
+import KelompokTaksEmpatTujuh from './pages/Pages/UnitEmpatTujuh';
+import KelompokTaksEmpatDelapan from './pages/Pages/UnitEmpatDelapan';
+import KelompokTaksLimaSatu from './pages/Pages/UnitLimaSatu';
+import KelompokTaksLimaDua from './pages/Pages/UnitLimaDua';
+import KelompokTaksLimaTiga from './pages/Pages/UnitLimaTiga';
+import KelompokTaksLimaEmpat from './pages/Pages/UnitLimaEmpat';
+import KelompokTaksLimaLima from './pages/Pages/UnitLimaLima';
+import KelompokTaksLimaEnam from './pages/Pages/UnitLimaEnam';
+import KelompokTaksLimaTujuh from './pages/Pages/UnitLimaTujuh';
+import KelompokTaksLimaDelapan from './pages/Pages/UnitLimaDelapan';
 
 
 const Stack = createNativeStackNavigator();
@@ -46,7 +77,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='KelompokTaksDua'>
+      <Stack.Navigator initialRouteName='KelompokTaksDuaDelapan'>
         <Stack.Screen name="HalamanSplash" component={HalamanSplash} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanLogin" component={HalamanLogin} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanRegister" component={HalamanRegister} options={{headerShown:false}}  />
@@ -82,7 +113,37 @@ function App() {
    <Stack.Screen name="KelompokTaksSatuTujuh" component={KelompokTaksSatuTujuh} options={{headerShown:false}}  />
    <Stack.Screen name="KelompokTaksSatuDelapan" component={KelompokTaksSatuDelapan} options={{headerShown:false}}  />
         <Stack.Screen name="KelompokTaksDua" component={KelompokTaksDua} options={{headerShown:false}}  />
-
+ <Stack.Screen name="KelompokTaksDuaTiga" component={KelompokTaksDuaTiga} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaDua" component={KelompokTaksDuaDua} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaEmpat" component={KelompokTaksDuaEmpat} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaLima" component={KelompokTaksDuaLima} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaEnam" component={KelompokTaksDuaEnam} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaTujuh" component={KelompokTaksDuaTujuh} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksDuaDelapan" component={KelompokTaksDuaDelapan} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksTigaSatu" component={KelompokTaksTiga} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksTigaDua" component={KelompokTaksTigaDua} options={{headerShown:false}}  />
+  <Stack.Screen name="KelompokTaksTigaTiga" component={KelompokTaksTigaTiga} options={{headerShown:false}}  />
+  <Stack.Screen name="KelompokTaksTigaEmpat" component={KelompokTaksTigaEmpat} options={{headerShown:false}}  />
+  <Stack.Screen name="KelompokTaksTigaLima" component={KelompokTaksTigaLima} options={{headerShown:false}}  />
+  <Stack.Screen name="KelompokTaksTigaEnam" component={KelompokTaksTigaEnam} options={{headerShown:false}}  />
+  <Stack.Screen name="KelompokTaksTigaTujuh" component={KelompokTaksTigaTujuh} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksTigaDelapan" component={KelompokTaksTigaDelapan} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatSatu" component={KelompokTaksEmpatSatu} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatDua" component={KelompokTaksEmpatDua} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatTiga" component={KelompokTaksEmpatTiga} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatEmpat" component={KelompokTaksEmpatEmpat} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatLima" component={KelompokTaksEmpatima} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatEnam" component={KelompokTaksEmpatEnam} options={{headerShown:false}}  />
+ <Stack.Screen name="KelompokTaksEmpatTujuh" component={KelompokTaksEmpatTujuh} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksEmpatDelapan" component={KelompokTaksEmpatDelapan} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaSatu" component={KelompokTaksLimaSatu} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaDua" component={KelompokTaksLimaDua} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaTiga" component={KelompokTaksLimaTiga} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaEmpat" component={KelompokTaksLimaEmpat} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaLima" component={KelompokTaksLimaLima} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaEnam" component={KelompokTaksLimaEnam} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaTujuh" component={KelompokTaksLimaTujuh} options={{headerShown:false}}  />
+<Stack.Screen name="KelompokTaksLimaDelapan" component={KelompokTaksLimaDelapan} options={{headerShown:false}}  />
 
 
 
