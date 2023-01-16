@@ -11,7 +11,7 @@ import Modal from "react-native-modal";
 
 function KelompokTaksTigaDelapan({navigation}) {
 
-    const [modal,setModal] = useState(false)
+
 
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
@@ -94,7 +94,7 @@ function KelompokTaksTigaDelapan({navigation}) {
 
 
 <View style={{padding:10, margin:20, bottom:0 }} >
-    <TouchableOpacity  onPress={() => setModal(true)} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+    <TouchableOpacity  onPress={()=>alert('Completed!')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Done</Text>
     </TouchableOpacity>
 </View>

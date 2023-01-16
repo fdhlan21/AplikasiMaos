@@ -7,37 +7,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import colors from '../../../utils/colors/colors';
 import { FaBeer } from 'react-icons/fa';
 import Modal from "react-native-modal";
-
+import AwesomeAlert from 'react-native-awesome-alerts';
 
 function KelompokTaksSatuDelapan({navigation}) {
 
-    const [modal,setModal] = useState(false)
+    
 
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
-
-
-<Modal   style={{alignItems:'center'}} isVisible={modal}>
-        <View style={{ backgroundColor:colors.white,borderRadius:20, width:300, height:200, }}>
-        
-        <View style={{flexDirection:'row', justifyContent:'flex-end', padding:10}}>
-        <TouchableOpacity    onPress={()=>navigation.navigate('HalamanUnitSatu')}   style={{}}  ><Image   style={{width:15, height:15,}} source={require('../../../assets/img/x.png')} /></TouchableOpacity>
-        </View>
-        <View style={{padding:10 ,bottom:20, justifyContent:'center', alignItems:'center'}}>
-        <Image  style={{width:128, height:128, }} source={require('../../../assets/img/ceklis.png')} />
-          <Text  style={{color:colors.secondary, fontFamily:'Alata-Regular', fontSize:25, textAlign:'center'}}  >Completed!</Text>
-          </View>
-        </View>
-      </Modal>
-
-
-
-
-
-
-
-
-
 
 <View  style={{backgroundColor:colors.secondary, padding:10,borderBottomLeftRadius:20, borderBottomRightRadius:20, bottom:30 }}>
 <View   style={{flexDirection:'row', padding:10, top:25  }} >
@@ -94,7 +71,7 @@ function KelompokTaksSatuDelapan({navigation}) {
 
 
 <View style={{padding:10, margin:20, bottom:0 }} >
-    <TouchableOpacity  onPress={() => setModal(true)} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
+    <TouchableOpacity   onPress={()=>alert('Completed!')}  style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
         <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center'}}>Done</Text>
     </TouchableOpacity>
 </View>

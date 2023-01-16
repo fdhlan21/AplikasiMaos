@@ -10,7 +10,30 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 function KelompokTaksTigaTujuh({navigation}) {
 
-  const [checkboxState, setCheckboxState] = React.useState(false);
+
+
+ const [skor1,jawabannomorSatu] = useState(0);
+const [skor2,jawabannomorDua] = useState(0); 
+const [skor3,jawabannomorTiga] = useState(0);
+const [skor4,jawabannomorEmpat] = useState(0);
+const [skor5,jawabannomorLima] = useState(0);
+const [skor6,jawabannomorEnam] = useState(0);
+const [skor7,jawabannomorTujuh] = useState(0);
+const [skor8,jawabannomorDelapan] = useState(0);
+const [skor9,jawabannomorSembilan] = useState(0);
+const [skor10,jawabannomorSepuluh] = useState(0);
+const [skor11,jawabannomorSebelas] = useState(0);
+const [skor12,jawabannomorDuabelas] = useState(0);
+const [skor13,jawabannomorTigabelas] = useState(0);
+const [skor14,jawabannomorEmpatbelas] = useState(0);
+const [skor15,jawabannomorLimabelas] = useState(0);
+const [skor16,jawabannomorEnambelas] = useState(0);
+const [skor17,jawabannomorTujuhbelas] = useState(0);
+const [skor18,jawabannomorDelapanbelas] = useState(0);
+const [skor19,jawabannomorSembilanbelas] = useState(0);
+const [skor20,jawabannomorDuapuluh] = useState(0);
+
+
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
 
@@ -45,51 +68,50 @@ Activities</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. In the afternoon"
-/>
 
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. In the morning*"
-/>
 
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. In the evening"
-/>
 
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. In the full moon"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. In the afternoon</Text>
 </View>
 
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. In the morning</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. In the evening</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. In the full moon</Text>
+
+</View>
+
+
+</View>
 </View>
 
 
@@ -101,51 +123,49 @@ Activities</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. She lived in the cave"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. She lived in the lion’s nest"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. She lived everywhere in the woods*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. She lived in the dwarfs’ cottage"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. She lived in the cave</Text>
 </View>
 
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. She lived in the lion’s nest</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. She lived everywhere in the woods</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. She lived in the dwarfs’ cottage</Text>
+</View>
+
+
+
+</View>
 </View>
 
 
@@ -156,51 +176,52 @@ Activities</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Because she loved them very much"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. As a result of forcing from them"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Because her parents were dead*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Because she was afraid of the dwarfs"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Because she loved them very much</Text>
 </View>
 
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. As a result of forcing from them</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Because her parents were dead</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Because she was afraid of the dwarfs</Text>
+</View>
+
+
+
+
+
+</View>
 </View>
 
 
@@ -212,51 +233,50 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Fire up*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Sleepy"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Bored"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. War"
-/>
+
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorEmpat(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Fire up</Text>
 </View>
 
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Sleepy</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Bored</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. War</Text>
+</View>
+
+
+</View>
 </View>
 
 
@@ -267,49 +287,49 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Orientation, Complication, Resolution*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Orientation, Complication, Reorientation"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Orientation, Argument, Conclusion"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorLima(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Identification and description"
-/>
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Orientation, Complication, Resolution</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Orientation, Complication, Reorientation</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Orientation, Argument, Conclusion</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Identification and description</Text>
+</View>
+
+
+
+
+
 </View>
 </View>
 
@@ -343,49 +363,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. The Emperor’s New Suit*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. The Emperor’s New Horse"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. The Emperor’s Book"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. The Emperor’ Shoes"
-/>
 </View>
 
 </View>
@@ -399,49 +377,8 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. She lived in the cave"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. She lived in the lion’s nests"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. She lived everywhere in the woods*"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. She lived in the dwarfs’ cottage"
-/>
 </View>
 
 </View>
@@ -454,104 +391,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. To describe the emperor"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. To tell the series of events"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. To give a report about the emperor’s habit"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. To entertain or amuse the reader*"
-/>
-</View>
-
-</View>
-
-
-
-<View style={{padding:20}}>
-<View style={{padding:10}}>
-  <Text style={{fontFamily:'Alata-Regular', fontSize:15}}>9. The following statements are true, except …</Text>
-</View>
-
-<View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. The emperor had a new coat for every hour of the day and often liked to show off his outfits."
-/>
-
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. The crooks asked for silver from the emperor.*"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. The crooks did nothing all day but laugh at the foolishness of the emperor."
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. The old minister was surprised to see that the weavers were not weaving any dresses at all."
-/>
 </View>
 
 </View>
@@ -564,49 +404,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. It is best to trust oneself and be honest.*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Respect other’s property and privacy."
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. It is always good to have a second language."
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. We should be kind to other people."
-/>
 </View>
 </View>
 
@@ -642,49 +440,8 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Pinocchio is a daughter"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Pinocchio is a puppet*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Pinocchio is a carpenter"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Pinocchio is a farmer"
-/>
 </View>
 
 </View>
@@ -698,49 +455,8 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Geppetto is a farmer"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Geppetto is a driver"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Geppetto is a carpenter*"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Geppetto is a chef"
-/>
 </View>
 
 </View>
@@ -753,49 +469,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Plastic"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Silver"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Gold"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Wood*"
-/>
 </View>
 
 </View>
@@ -808,49 +482,9 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. His nose grew long*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. His hair grew long"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. His father was angry"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Her mother was angry"
-/>
 </View>
 
 </View>
@@ -863,49 +497,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Market"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Circus*"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Home"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Garden"
-/>
 </View>
 </View>
 
@@ -938,49 +530,8 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. At giant’s castle"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. At beautiful castle"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. On the way to the market*"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. At the man’s house"
-/>
 </View>
 
 </View>
@@ -994,49 +545,8 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Jack and the Beanstalk*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Jack and his son"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. The giantess and his mother"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Jack and the man"
-/>
 </View>
 
 </View>
@@ -1049,49 +559,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. An enormous giant"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. A man*"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. His mother"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. His father"
-/>
 </View>
 
 </View>
@@ -1104,49 +572,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Because Jack sold their cow for the magic beans.*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Because the cow was precious."
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Because the cow was expensive."
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Because Jack went to market."
-/>
 </View>
 
 </View>
@@ -1159,49 +585,7 @@ The underlined word has the apposite meaning with …</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Kind"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Happy"
-/>
-
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Angry"
-/>
-
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Rich*"
-/>
 </View>
 </View>
 

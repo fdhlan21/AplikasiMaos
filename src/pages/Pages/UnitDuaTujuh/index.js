@@ -10,7 +10,34 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 function KelompokTaksDuaTujuh({navigation}) {
 
-  const [checkboxState, setCheckboxState] = React.useState(false);
+
+
+ const [skor1,jawabannomorSatu] = useState(0);
+const [skor2,jawabannomorDua] = useState(0); 
+const [skor3,jawabannomorTiga] = useState(0);
+const [skor4,jawabannomorEmpat] = useState(0);
+const [skor5,jawabannomorLima] = useState(0);
+const [skor6,jawabannomorEnam] = useState(0);
+const [skor7,jawabannomorTujuh] = useState(0);
+const [skor8,jawabannomorDelapan] = useState(0);
+const [skor9,jawabannomorSembilan] = useState(0);
+const [skor10,jawabannomorSepuluh] = useState(0);
+const [skor11,jawabannomorSebelas] = useState(0);
+const [skor12,jawabannomorDuabelas] = useState(0);
+const [skor13,jawabannomorTigabelas] = useState(0);
+const [skor14,jawabannomorEmpatbelas] = useState(0);
+const [skor15,jawabannomorLimabelas] = useState(0);
+const [skor16,jawabannomorEnambelas] = useState(0);
+const [skor17,jawabannomorTujuhbelas] = useState(0);
+const [skor18,jawabannomorDelapanbelas] = useState(0);
+const [skor19,jawabannomorSembilanbelas] = useState(0);
+const [skor20,jawabannomorDuapuluh] = useState(0);
+
+
+
+
+
+
   return (
     <View style={{ flex: 1, backgroundColor:colors.white, }}>
 
@@ -45,49 +72,50 @@ Activities</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Describing pempek Palembang"
-/>
 
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Entertaining the reader with pempek Palembang"
-/>
 
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Persuading the reader to cook pempek Palembang"
-/>
 
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Telling the reader how to cook pempek Palembang*"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Describing pempek Palembang</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Entertaining the reader with pempek Palembang</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Persuading the reader to cook pempek Palembang</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSatu(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Telling the reader how to cook pempek Palembang</Text>
+
+</View>
+
+
+
+
 </View>
 
 </View>
@@ -101,49 +129,49 @@ Activities</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Gingere"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Turmeric"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Clove garlic*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Onion"
-/>
+
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Ginger</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Turmeric</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Clove garlic</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDua(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Onion</Text>
+</View>
+
+
 </View>
 
 </View>
@@ -157,49 +185,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. for 15 minutes*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. when finish"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. when serving"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. over the whole oven"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorTiga(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. for 15 minutes</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. when finish</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. when serving</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTiga(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. over the whole oven</Text>
+</View>
+
+
+
+
 </View>
 
 </View>
@@ -212,49 +241,51 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Stir the dough slowly"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Deep fry the cooked pempek*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Add a spoonful of sugar to the dough"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Add 3 tablespoons of salt"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Stir the dough slowly</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Deep fry the cooked pempek</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Add a spoonful of sugar to the dough</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpat(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Add 3 tablespoons of salt</Text>
+</View>
+
+
+
+
+
+
 </View>
 
 </View>
@@ -267,49 +298,49 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Vegans"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Meat lovers"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Seafood lovers*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Fast food lovers"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Vegans</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Meat lovers</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Seafood lovers</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLima(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Fast food lovers</Text>
+</View>
+
+
+
 </View>
 </View>
 
@@ -330,49 +361,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. be informed how to wash our hands using soap"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. know how to clean hands using hand sanitizer*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. how to produce a hand sanitizer"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. be informed on how to clean the thumbs"
-/>
+
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorEnam(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. be informed how to wash our hands using soap</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnam(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. know how to clean hands using hand sanitizer</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnam(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. how to produce a hand sanitizer</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnam(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. be informed on how to clean the thumbs</Text>
+</View>
+
+
+
+
 </View>
 
 </View>
@@ -386,49 +418,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. We should clean the thumbs*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. We should rub until dry"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. We should clean our wrists"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. We should disinfect the hands"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorTujuh(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. We should clean the thumbs</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. We should rub until dry</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. We should clean our wrists</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. We should disinfect the hands</Text>
+</View>
+
+
+
+
+
 </View>
 
 </View>
@@ -441,49 +474,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Rubbing until dry"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Cleaning the wrists"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Cleaning the back of hands"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Cleaning palm to palm*"
-/>
+
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDelapan(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Rubbing until dry</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapan(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Cleaning the wrists</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapan(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Cleaning the back of hands</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapan(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Cleaning palm to palm</Text>
+</View>
+
+
+
 </View>
 
 </View>
@@ -496,49 +530,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Cleaning palm to palm"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Disinfecting hands*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Cleaning the wrists"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Rubbing until dry"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSembilan(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Cleaning palm to palm</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilan(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Disinfecting hands</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilan(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Cleaning the wrists</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilan(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Rubbing until dry</Text>
+</View>
+
+
+
+
 </View>
 
 </View>
@@ -551,49 +586,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Cleaning palm to palm"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Rubbing until dryn"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Cleaning the hair*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Cleaning the wrists"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSepuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Cleaning palm to palm</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSepuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Rubbing until dry</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSepuluh(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Cleaning the hair</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSepuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Cleaning the wrists</Text>
+</View>
+
+
+
+
 </View>
 </View>
 
@@ -616,49 +652,50 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Descriptive text"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Narrative text"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Report text"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Procedure text*"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSebelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Descriptive text</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSebelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Narrative text</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSebelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Report text</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSebelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Procedure text</Text>
+</View>
+
+
+
+
+
 </View>
 
 </View>
@@ -672,49 +709,49 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. How to cook Indonesian meatball soup*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. How to bake a cake"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. How to make cheesecake"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. How to cook the soup"
-/>
+<View style={{flexDirection:'row', }}>
+
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDuabelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. How to cook Indonesian meatball soup</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. How to bake a cake</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. How to make cheesecake</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. How to cook the soup</Text>
+</View>
+
+
+
 </View>
 
 </View>
@@ -727,49 +764,49 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Clove garlic"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Cheese*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Beef"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Oil"
-/>
+
+<View style={{flexDirection:'row', }}>
+
+<TouchableOpacity  onPress={()=>{
+      jawabannomorTigabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Clove garlic</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTigabelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Cheese</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTigabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Beef</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTigabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Oil</Text>
+</View>
+
+
 </View>
 
 </View>
@@ -781,50 +818,51 @@ The best adverb to complete the instruction is ...</Text>
   <Text style={{fontFamily:'Alata-Regular', fontSize:15}}>14. How much white peppercorns do we need to cook meatball soup?</Text>
 </View>
 
+
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. 1 tablespoon*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. 2 tablespoons"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. 3 tablespoons"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorEmpatbelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. 4 tablespoons"
-/>
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. 1 tablespoon</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpatbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. 2 tablespoons</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpatbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. 3 tablespoons</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEmpatbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. 4 tablespoons</Text>
+</View>
+
+
+
+
+
 </View>
 
 </View>
@@ -837,49 +875,46 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Wash the beef thoroughly."
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Crush the garlic."
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Put two spoonfuls of vanilla.*"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorLimabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Add salt and the beef cube/MSG."
-/>
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Wash the beef thoroughly.</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLimabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Crush the garlic.</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLimabelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Put two spoonfuls of vanilla.</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorLimabelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Add salt and the beef cube/MSG.</Text>
+</View>
+
+
 </View>
 </View>
 
@@ -902,49 +937,47 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Wash them"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Remove the seeds"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Cut them into pieces"
-/>
- 
-<BouncyCheckbox style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Cook them*"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorEnambelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Wash them</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnambelas(0)
+    }}  style={{width:20, height:20,borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Remove the seeds</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnambelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Cut them into pieces</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorEnambelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Cook them</Text>
+</View>
+
+
 </View>
 
 </View>
@@ -958,49 +991,48 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Indonesian Chili sauce with shrimp paste*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Indonesian shrimp paste"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Food"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Dessert"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorTujuhbelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Indonesian Chili sauce with shrimp paste</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuhbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Indonesian shrimp paste</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuhbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Food</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorTujuhbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Dessert</Text>
+</View>
+
+
+
 </View>
 
 </View>
@@ -1013,49 +1045,48 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Frying the chili"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Stir in the lime juice*"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Boil the water"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Cook the dried shrimp paste"
-/>
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDelapanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Frying the chili</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapanbelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Stir in the lime juice</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Boil the water</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDelapanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Cook the dried shrimp paste</Text>
+</View>
+
+
 </View>
 
 </View>
@@ -1068,49 +1099,49 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Put slices of lemon in the glass."
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Wash the shrimp paste."
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Add the cooked shrimp paste to a pestle.*"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Boil the shrimp paste"
-/>
+
+
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorSembilanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Put slices of lemon in the glass.</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Wash the shrimp paste.</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilanbelas(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Add the cooked shrimp paste to a pestle</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorSembilanbelas(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Boil the shrimp paste</Text>
+</View>
+
+
 </View>
 
 </View>
@@ -1123,52 +1154,62 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 <View style={{padding:10}}>
-<BouncyCheckbox style={{}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="A. Egg*"
-/>
 
-<BouncyCheckbox style={{top:5}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="B. Garlic"
-/>
 
-<BouncyCheckbox style={{top:10}}
-  size={25} 
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="C. Chili"
-/>
 
-<BouncyCheckbox  style={{top:15}}
-  size={25}
-  fillColor="gray"
-  unfillColor="#FFFFFF"
-  iconStyle={{ borderColor: "red" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  textStyle={{ fontFamily: "Alata-Regular" , fontSize:15, textDecorationLine:"none" }}
-        onPress={() => setCheckboxState(!checkboxState)}
-        text="D. Oil"
-/>
+<View style={{flexDirection:'row', }}>
+<TouchableOpacity  onPress={()=>{
+      jawabannomorDuapuluh(10)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede'}} >
+
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black}}>A. Egg</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuapuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:10}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:10}}>B. Garlic</Text>
+</View>
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuapuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:20}} >
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:20}}>C. Chili</Text>
+</View>
+
+
+<View style={{flexDirection:'row',}}>
+<TouchableOpacity onPress={()=>{
+      jawabannomorDuapuluh(0)
+    }}  style={{width:20, height:20, borderRadius:10, borderWidth:1, borderColor:colors.secondary, backgroundColor:'#dedede', top:30}} >
+
+</TouchableOpacity>
+<Text style={{left:10, fontFamily:'Alata-Regular', fontSize:15, color:colors.black, top:30}}>D. Oil</Text>
+</View>
+
+
+
+
 </View>
 </View>
 
+
+
+<View style={{padding:10}}>
+ <Text style={{
+      fontSize:20,
+      textAlign:'center'
+    }}>Total SKOR :  {skor1 + skor2 + skor3 + skor4 + skor5 + skor6 + skor7 + skor8 + skor9 + skor10 + skor11 + skor12 + skor13 + skor14 + skor15 +  skor16 + skor17 + skor18 + skor19 + skor20}</Text>
+
+
+</View>
 
 <View style={{padding:10, top:20, margin:20 }} >
     <TouchableOpacity  onPress={()=>navigation.navigate('KelompokTaksSatuDelapan')} style={{padding:10, backgroundColor:colors.primary,  borderRadius:10,}} >
@@ -1177,7 +1218,7 @@ The best adverb to complete the instruction is ...</Text>
 </View>
 
 </ScrollView>
-
+  
 
 <View style={{padding:1, backgroundColor:colors.secondary,}}></View>
 <View style={{flexDirection:'row', padding:10, justifyContent:'space-around'}}>

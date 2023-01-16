@@ -70,6 +70,7 @@ import KelompokTaksLimaLima from './pages/Pages/UnitLimaLima';
 import KelompokTaksLimaEnam from './pages/Pages/UnitLimaEnam';
 import KelompokTaksLimaTujuh from './pages/Pages/UnitLimaTujuh';
 import KelompokTaksLimaDelapan from './pages/Pages/UnitLimaDelapan';
+import HalamanTest from './pages/Pages/HalamanTest';
 
 
 const Stack = createNativeStackNavigator();
@@ -77,7 +78,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='KelompokTaksDuaDelapan'>
+      <Stack.Navigator initialRouteName='KelompokTaksTigaTujuh'>
         <Stack.Screen name="HalamanSplash" component={HalamanSplash} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanLogin" component={HalamanLogin} options={{headerShown:false}}  />
         <Stack.Screen name="HalamanRegister" component={HalamanRegister} options={{headerShown:false}}  />
@@ -112,7 +113,7 @@ function App() {
    <Stack.Screen name="KelompokTaksSatuEnam" component={KelompokTaksSatuEnam} options={{headerShown:false}}  />
    <Stack.Screen name="KelompokTaksSatuTujuh" component={KelompokTaksSatuTujuh} options={{headerShown:false}}  />
    <Stack.Screen name="KelompokTaksSatuDelapan" component={KelompokTaksSatuDelapan} options={{headerShown:false}}  />
-        <Stack.Screen name="KelompokTaksDua" component={KelompokTaksDua} options={{headerShown:false}}  />
+        <Stack.Screen name="KelompokTaksDuaSatu" component={KelompokTaksDua} options={{headerShown:false}}  />
  <Stack.Screen name="KelompokTaksDuaTiga" component={KelompokTaksDuaTiga} options={{headerShown:false}}  />
  <Stack.Screen name="KelompokTaksDuaDua" component={KelompokTaksDuaDua} options={{headerShown:false}}  />
  <Stack.Screen name="KelompokTaksDuaEmpat" component={KelompokTaksDuaEmpat} options={{headerShown:false}}  />
@@ -144,7 +145,7 @@ function App() {
 <Stack.Screen name="KelompokTaksLimaEnam" component={KelompokTaksLimaEnam} options={{headerShown:false}}  />
 <Stack.Screen name="KelompokTaksLimaTujuh" component={KelompokTaksLimaTujuh} options={{headerShown:false}}  />
 <Stack.Screen name="KelompokTaksLimaDelapan" component={KelompokTaksLimaDelapan} options={{headerShown:false}}  />
-
+<Stack.Screen name="HalamanTest" component={HalamanTest} options={{headerShown:false}}  />
 
 
 
